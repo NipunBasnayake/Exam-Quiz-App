@@ -1,5 +1,6 @@
-package edu.icet.dto;
+package edu.icet.entity;
 
+import jakarta.persistence.*;
 import lombok.*;
 
 @Getter
@@ -7,7 +8,11 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Exam {
+@Entity
+@Table(name="exam")
+public class ExamEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String examName;
     private String description;

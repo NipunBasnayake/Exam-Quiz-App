@@ -5,15 +5,15 @@ import edu.icet.dto.Exam;
 import java.util.List;
 
 public interface ExamService {
-    void createExam(Exam exam);
+    Boolean createExam(Exam exam);
 
-    Exam getExamByCourseId(Integer id);
+    List<Exam> getExamByCourseId(Integer id);
 
-    List<Exam> getAll(Integer id);
+    List<Exam> getAll();
 
-    void updateExam(Exam exam);
+    Boolean updateExam(Exam exam);
 
-    void deleteExamById(Integer id);
+    Boolean deleteExamById(Integer id);
 
-    void deleteExamByCourseId(Integer id);
+    Boolean deleteExamByCourseId(Integer id);
 }
