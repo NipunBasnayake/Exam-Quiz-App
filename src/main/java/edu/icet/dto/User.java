@@ -22,6 +22,4 @@ public class User {
     private String phoneNo;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-
-
 }
