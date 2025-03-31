@@ -14,6 +14,4 @@ public interface ExamService {
     Boolean updateExam(Exam exam);
 
     Boolean deleteExamById(Integer id);
-
-    Boolean deleteExamByCourseId(Integer id);
 }
